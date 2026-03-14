@@ -3,7 +3,7 @@ const audio = document.getElementById('bgMusic');
 function openAndPlay() {
     document.getElementById('envelope').classList.toggle('open');
     if (audio.paused) {
-        audio.play().catch(err => console.log("Audio play blocked. Click to start."));
+        audio.play().catch(err => console.log("Audio play blocked."));
     }
 }
 
@@ -19,6 +19,7 @@ function giveSalami(amount) {
     const takaText = document.getElementById('takaText');
 
     let imgUrl = "";
+    // গিটহাবের নামের সাথে হুবহু মিল রাখা হয়েছে
     if(amount === 1000) imgUrl = "taka1000.png"; 
     if(amount === 500) imgUrl = "taka500.jpg";
     if(amount === 200) imgUrl = "taka200.png";
